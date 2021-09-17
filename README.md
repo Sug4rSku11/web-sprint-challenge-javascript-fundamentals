@@ -26,13 +26,28 @@ Edit this document to include your answers after each question. Make sure to lea
 
 1. Explain the differences between `.map`, `.reduce` and `.filter` and describe a use case for each. 
 
+    - .map needs a return statement and returns a brand new array.
+    - .reduce doesn't return a new array- it returns a single value, usually used for multiplication/ addition.
+    - .filter will filter data based on something that can be equated to either true or false, if its true its included in the new array, if it is false its not included. It returns a new array and does not manipulate the original array.
+
 2. Explain the difference between a callback and a higher order function.
+
+    A callback function is a function that is passed into another function as an argument, a higher order function is a function that receives other functions.
 
 3. Explain what a closure is.
 
+    Closure is when an inner function reaches out of its scope to grab a variable defined in an outer function.
+
 4. Describe the four principles of the 'this' keyword.
 
+    - window/global object binding, when 'this' hasn't been given any context it will return the window, the global object in node or undefined in strict mode.
+    - implicit binding - applies to objects with methods, when the method is invoked, 'this' refers to what is left of the dot.
+    - explicit binding - when we tell a function what 'this' keyword should be using such as .call, .apply, or .bind.
+    - new binding- when a function is invoked with a new keyword, the 'this' keyword inside that function is bound to the new object being constructed. When a function is invoked as a constructor function using the new keyword, 'this' points to the new object that is created.
+
 5. Why do we need super() in an extended class?
+
+    super() is used to access and call functions on an object's parent, must be used before 'this' keyword is used.
 
 You are expected to be able to answer questions in these areas. Your responses contribute to your Sprint Challenge grade. 
 
