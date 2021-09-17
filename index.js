@@ -30,9 +30,14 @@ When myFunction is invoked it prints out const external and runs the nested func
     
 For example, `summation(4)` should return 10 because 1+2+3+4 is 10. Note, you may use a for loop for this function if you wish */
 
-function summation() {
-
-  } 
+function summation(num) {
+  let count = 0;
+  for(let i = 0; i <= num; i++){
+    count += i;
+  }
+  return count;
+}
+console.log('Task 2', summation((4)));
  
 
 // 🦁🦁🦁 Topic 2: ADVANCED Array Methods 🦁🦁🦁
@@ -113,16 +118,16 @@ const zooAnimals = [
     * The consume function should return the invocation of cb, passing a and b into cb as arguments
   */
 
-  function consume(/*Your Code Here */){
-    /*Your Code Here */
+  function consume(a, b, cb){
+    return cb(a,b);
   }
  
   
   /* 🦁🦁🦁 Step 2: Create several functions to callback with consume(); 🦁🦁🦁 */
  // 🦁🦁🦁 Use add to return the sum of two numbers 🦁🦁🦁
   
-function add(/*Your Code Here */){
-    /*Your Code Here*/
+function add(a, b){
+  return a + b;
   }
 
 
