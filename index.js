@@ -17,7 +17,9 @@ myFunction();
 
 //🚀🚀🚀 ⬇️ 📝 Explanation ⬇️ 📝 🚀🚀🚀: 
 
-
+/* myFunction console.log's the external const and also has an internal const which is called by the nested function in its own block. nestedFunction reaches up to myFunction for the internal const that is being called to console.log
+When myFunction is invoked it prints out const external and runs the nested function which prints out const internal.
+ */
 
 
 
